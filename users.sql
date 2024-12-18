@@ -41,7 +41,7 @@ CREATE TABLE `tbl_users` (
 --
 
 INSERT INTO `tbl_users` (`fullname`, `username`, `email`, `password`, `verifikasi_code`, `is_verif`) VALUES
-('rahmatullah', 'amat', 'anakhidayatullah212@gmail.com', 'rahmatullah', '0fb9b259ebcc9383a1cda07df1b223f3', 1),
+('rahmatullah', 'amat', 'anakhidayatullah212@gmail.com', 'rahmat', '0fb9b259ebcc9383a1cda07df1b223f3', 1),
 ('Wisnu', 'Hazar ', 'wisnuadelia22@gmail.com', 'abc123', 'eaf042bcf59f92867e4ed5e98ed9a55f', 1);
 
 --

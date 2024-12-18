@@ -54,15 +54,15 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Verifikasi akun';
-    $mail->Body    = 'Hi!'.$username.'<br> Saya Rahmat Terima kasih sudah mendaftar di website kami,<br> Mohoon verifikasi akun akmu!
-    <a href="http://localhost/sementara/verif.php?code='.$code.'">Verifikasi</a>';
+    $mail->Body    = 'Hi!'.$username.'<br> Saya Amat Terima kasih sudah Registrasi di website kami,<br> Mohoon verifikasi akun anda!
+    <a href="http://localhost/loginAuth/verif.php?code='.$code.'">Di sini</a>';
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     if($mail->send()){
         $koneksi->query("INSERT INTO tbl_users (fullname, username, email, password, verifikasi_code)
         VALUES('$fullname', '$username', '$email', '$password', '$code')");
 
-        echo"<script>alert('Registrasi berhasil, Silahkan cek Email untuk ferifikasi akun');window.location='index.html'</script>";
+        echo"<script>alert('Registrasi berhasil, Silahkan cek Email untuk ferifikasi akun anda');window.location='index.html'</script>";
     }
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
